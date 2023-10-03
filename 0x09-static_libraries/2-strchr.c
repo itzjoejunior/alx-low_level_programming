@@ -1,19 +1,18 @@
 #include "main.h"
-
 /**
-* _strchr - the first occurrence of a character in a string
-* @s: input string
-* @c: target character to find
-* Return: Always 0 (Success)
-*/
+ * _strchr - the first occurrence of a character
+ * @s: input value
+ * @c: input value
+ * Return: Always 0 (Success)
+ */
 char *_strchr(char *s, char c)
 {
-	int i = 0;
+	int a = 0;
 
-	for (; s[i] >= '\0'; i++)
+	for (; s[a] >= '\0'; a++)
 	{
-	if (s[i] == c)
-	return (&s[i]);
+	if (s[a] == c)
+	return (&s[a]);
 	}
 	return (0);
 }

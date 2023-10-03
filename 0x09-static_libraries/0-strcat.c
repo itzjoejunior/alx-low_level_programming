@@ -1,11 +1,10 @@
 #include "main.h"
-
 /**
-* _strcat - function that concatenates two strings
-* @dest: the destination string
-* @src: the source string to be appended to destination
+*  _strcat - function that concatenates two strings
+*  @dest: the destination string
+*  @src: the source string to be appended to destination
 *
-* Return: void
+*  Return: void
 */
 char *_strcat(char *dest, char *src)
 {
@@ -24,6 +23,7 @@ char *_strcat(char *dest, char *src)
 	a++;
 	b++;
 	}
+
 	dest[a] = '\0';
 	return (dest);
 }

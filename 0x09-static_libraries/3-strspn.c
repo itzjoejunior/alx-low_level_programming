@@ -1,26 +1,25 @@
 #include "main.h"
-
 /**
-* _strspn - Entry point
+* _strspn - entry point
 * @s: input
-* @accept: set of characters to span
+* @accept: input
 * Return: Always 0 (Success)
 */
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int n = 0;
-	int r;
+	int a;
 
 	while (*s)
 	{
-	for (r = 0; accept[r]; r++)
+	for (a = 0; accept[a]; a++)
 	{
-	if (*s == accept[r])
+	if (*s == accept[a])
 	{
 	n++;
 	break;
 	}
-	else if (accept[r + 1] == '\0')
+	else if (accept[a + 1] == '\0')
 	return (n);
 	}
 	s++;
