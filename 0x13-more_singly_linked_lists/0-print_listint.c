@@ -1,6 +1,6 @@
 #include "lists.h"
-include <stdio.h>
-include <stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * print_listint - Outputs every element in a linked list
@@ -8,15 +8,16 @@ include <stdlib.h>
  *
  * Return: number of nodes
  */
+size_t print_listint(const listint_t *h)
 {
-	size_t mynodes = 0;
+	size_t mynum = 0;
 
 	while (h)
 	{
-		mynodes++;
+		mynum++;
 		printf("%d\n", h->n);
 		h = h->next;
 	}
 
-	return (mynodes);
+	return (mynum);
 }
